@@ -1,5 +1,7 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner"
+
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -24,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" />
       </head>
       <body className="font-vazir bg-gray-100 text-gray-900">
+        <Toaster position="top-center" richColors />
         {children}
       </body>
     </html>
